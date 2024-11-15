@@ -1,0 +1,54 @@
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+
+input, textarea {
+   
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 400px;
+    height: 120px; 
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+    resize: vertical; 
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    width: 800px;
+    height: 754;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+
+.group-form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 40px;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}

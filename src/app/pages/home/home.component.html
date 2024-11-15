@@ -1,6 +1,21 @@
 <app-header></app-header>
 <section class="home-container">
     <div><img src="assets/burger.png" alt=""></div>
-  
+   
+    <div class="buttons">
+     <!-- Botão para 'Fazer pedido'-->
+     <app-button [buttonText]="pedidoButtonText" [routerLink]="pedidoRoute" ></app-button>
+
+     <!-- Botão para 'Acessar cardápio'-->
+     <app-button [buttonText]="cardapioButtonText" [routerLink]="cardapioRoute"  [isSpecial]="true" > </app-button>
+    </div>
     
   </section>
+
+
+  <section>
+    <!--<app-cardapio></app-cardapio>-->
+
+  </section>
+
+ 

@@ -1,11 +1,38 @@
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 90vh;
     justify-content: center;
+    padding: 10px;
 }
 
-img{
-    width: 1200px;
+img {
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+}
+
+
+@media (max-width: 768px) {
+    .home-container {
+        height: auto;
+        padding: 20px; 
+    }
+
+    img {
+        width: 100%; 
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding: 15px; 
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%; 
+    }
 }

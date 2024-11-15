@@ -1,0 +1,25 @@
+.cardapio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1{
+  color: var(--red-color);
+  font-size: 45px;
+  line-height: 54.46px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+  
+  

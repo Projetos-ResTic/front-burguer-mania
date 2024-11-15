@@ -1,0 +1,20 @@
+
+
+<app-header></app-header>
+<section class="container">
+
+<h1>{{ titleText }}</h1>
+
+<div class="cardapio-container">
+ 
+    <app-card *ngFor="let card of cards"
+    [imagem]="card.imagem"
+    [titulo]="card.titulo"
+    [descricao]="card.descricao">
+    </app-card>
+
+        
+
+</div>
+<app-button [buttonText]="cardapioCompletoButtonText" [isUpper]="true"></app-button>
+</section>
