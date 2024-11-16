@@ -1,3 +1,4 @@
+/* Estilos principais para o botão */
 .btn {
   font-size: 18px;
   color: white;
@@ -5,13 +6,13 @@
   margin: 20px;
   cursor: pointer;
   background-color: var(--red-color);
-  width: 256px;
-  height: 66px;
-  left: 361px;
-  top: 678px;
+  width: 256px; /* Largura do botão */
+  height: 66px; /* Altura do botão */
   font-weight: bold;
+  transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
+/* Estilos para o botão especial */
 .special-button {
   background-color: white;
   border: 1px solid var(--red-color);
@@ -19,8 +20,56 @@
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.upper-btn{
+/* Botão com texto em maiúsculas */
+.upper-btn {
   text-transform: uppercase;
 }
 
+/* Media Queries para responsividade */
 
+/* Para telas até 1024px (tablets em paisagem) */
+@media (max-width: 1024px) {
+  .btn {
+    font-size: 16px; /* Diminui o tamanho da fonte para telas menores */
+    width: 220px; /* Reduz a largura do botão */
+    height: 56px; /* Reduz a altura do botão */
+  }
+
+  .special-button {
+    font-size: 16px; /* Ajuste de fonte para o botão especial */
+    width: 220px; /* Reduz a largura */
+    height: 56px; /* Ajuste na altura */
+  }
+}
+
+/* Para telas até 768px (tablets em retrato e dispositivos móveis) */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    width: 180px; /* Diminui ainda mais a largura */
+    height: 50px; /* Ajuste na altura */
+    margin: 10px; /* Reduz a margem */
+  }
+
+  .special-button {
+    font-size: 14px; /* Ajuste de fonte */
+    width: 180px; /* Reduz a largura do botão especial */
+    height: 50px; /* Ajuste na altura */
+  }
+}
+
+/* Para telas até 480px (celulares) */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 12px; /* Tamanho de fonte menor para celulares */
+    width: 150px; /* Reduz ainda mais a largura */
+    height: 45px; /* Ajuste na altura */
+    margin: 8px; /* Menor margem */
+  }
+
+  .special-button {
+    font-size: 12px; /* Ajuste de fonte */
+    width: 150px; /* Reduz a largura do botão especial */
+    height: 45px; /* Ajuste na altura */
+  }
+}

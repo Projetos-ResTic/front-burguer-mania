@@ -1,25 +1,25 @@
-.cardapio-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-.container{
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: center; 
+  justify-content: center;  
+  min-height: 70vh;  
+  text-align: center; 
 }
 
-h1{
+.cardapio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;  
+  margin-top: 30px; 
+}
+
+h1 {
   color: var(--red-color);
   font-size: 45px;
   line-height: 54.46px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-
-  
-  

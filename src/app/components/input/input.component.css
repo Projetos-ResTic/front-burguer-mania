@@ -1,22 +1,25 @@
 label {
     display: block;
     margin-bottom: 6px;
-    font-weight: bold;
+    font-size: 20px;
+  }
+
+  label  span{
+    color: var(--red-color);
   }
 
 
 input, textarea {
-   
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 300px;
   }
 
   textarea {
-    width: 400px;
+    width: 650px;
     height: 120px; 
-
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px; 
@@ -30,7 +33,6 @@ input, textarea {
     justify-items: center;
 
     width: 800px;
-    height: 754;
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;

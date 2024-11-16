@@ -1,5 +1,3 @@
-
-
 <app-header></app-header>
 <section class="container">
 
@@ -7,10 +5,11 @@
 
 <div class="cardapio-container">
  
-    <app-card *ngFor="let card of cards"
+    <app-card *ngFor="let card of cards" [routerLink]="['/categoria', card.titulo]" class="clickable-card"
     [imagem]="card.imagem"
     [titulo]="card.titulo"
-    [descricao]="card.descricao">
+    [descricao]="card.descricao"
+    [routerLink]="['/categoria', card.titulo]">
     </app-card>
 
         
