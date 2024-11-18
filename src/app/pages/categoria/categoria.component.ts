@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HeaderComponent } from "../../components/header/header.component";
 import { CardComponent } from "../../components/card/card.component";
 import { ButtonComponent } from "../../components/button/button.component";
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-categoria',
   standalone: true,
-  imports: [HeaderComponent, CardComponent, ButtonComponent, CommonModule],
+  imports: [HeaderComponent, CardComponent, ButtonComponent, CommonModule, RouterLink],
   templateUrl: './categoria.component.html',
   styleUrls: ['./categoria.component.css']
 })

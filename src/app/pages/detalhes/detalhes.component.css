@@ -1,0 +1,103 @@
+/* Estilos gerais */
+h1 {
+    color: var(--red-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  
+  .detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100vw;
+    height: 80vh;
+
+  }
+  
+  .box-detalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 55vw;
+    padding: 20px;
+    
+  }
+  
+  .card-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #eb0f0f;
+  }
+  
+  /* Media Queries para Responsividade */
+  
+  /* Telas pequenas (smartphones) */
+  @media (max-width: 768px) {
+    
+    h1 {
+      font-size: 1.5rem; /* Reduz o tamanho da fonte para telas pequenas */
+      margin-bottom: 20px;
+    }
+  
+    .detalhes {
+      height: auto; /* Ajusta o layout para que o conteúdo caiba melhor */
+      padding: 20px;
+    }
+  
+    .box-detalhes {
+      flex-direction: column; /* Coloca os itens em coluna para telas menores */
+      width: 100%; /* Ajusta a largura */
+      padding: 10px; /* Ajusta o padding */
+    }
+  
+    .card-detalhes {
+      width: 100%; /* Garante que os cards ocupem a largura total */
+    }
+  
+    .preco {
+      font-size: 1.2rem; /* Ajusta o tamanho da fonte do preço */
+    }
+  }
+  
+  /* Telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+    h1 {
+        margin-top: 100px;
+        margin-bottom: 8px;
+      }
+      
+    .box-detalhes {
+      width: 70vw; /* Ajusta a largura para tablets */
+      padding: 15px;
+      
+      flex-direction: column;
+    }
+  
+    .preco {
+      font-size: 1.4rem; /* Ajusta o tamanho da fonte do preço */
+    }
+  }
+  
+  /* Telas grandes (desktops) */
+  @media (min-width: 1025px) {
+    .box-detalhes {
+      width: 55vw; /* Ajusta a largura para telas maiores */
+    }
+  
+    .preco {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte do preço */
+    }
+  }
+  

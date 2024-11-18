@@ -8,7 +8,9 @@
       <app-card *ngFor="let item of items"
         [imagem]="item.imagem"
         [titulo]="item.titulo"
-        [descricao]="item.descricao">
+        [descricao]="item.descricao"
+        [routerLink]="['/detalhes', item.titulo]"
+        class="clickable-card">
       </app-card>
     </div>
     

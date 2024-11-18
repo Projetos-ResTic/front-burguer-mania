@@ -1,1 +1,35 @@
-<p>detalhes works!</p>
+<app-header></app-header>
+
+
+<section class="detalhes">
+  <h1>{{ tituloPag }}</h1>
+
+  <div class="box-detalhes">
+    <div class="card-detalhes">
+      <app-card 
+        [imagem]="imagem" 
+        [titulo]="titulo" 
+        [descricao]="descricao">
+      </app-card>
+
+      <div>
+        <p class="preco"> {{ preco  }}</p>
+      </div>
+      
+    </div>
+
+  
+   
+    <app-descricao 
+      [tituloDescricao]="tituloDescricao" 
+      [paragrafoDescricao]="descricaoDetalhada">
+    </app-descricao>
+
+    
+  </div>
+
+  
+  <app-button [buttonText]="detalhesButtonText" [isUpper]="true"></app-button>
+
+</section>
+
