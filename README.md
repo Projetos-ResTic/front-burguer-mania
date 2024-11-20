@@ -38,32 +38,30 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ---
 
-##  Estrutura de Pastas
-   src/
-├── app/
-│   ├── components/
-|   |   ├── button/
-|   |   ├── card/
-|   |   ├── descricao/
-│   │   ├── header/
-│   │   ├── input/
-|   ├── pages/
-|   |  ├── cardapio/
-|   |  ├── categoria/
-|   |  ├── detalhes/
-|   |  ├── home/
-|   |  ├── pedido/
-├── assets/
-└── index.html
+### Descrição Geral
 
+- **`app/components/`**: Reúne componentes modulares e reutilizáveis que facilitam a construção e manutenção do layout e das funcionalidades da aplicação.
+- **`app/pages/`**: Contém as páginas principais da aplicação, organizadas de acordo com suas funcionalidades específicas.
+- **`assets/`**: Diretório para armazenar recursos estáticos necessários ao projeto, como imagens.
 
 ---
 
 🚀 Tecnologias Utilizadas
-As principais tecnologias utilizadas neste projeto foram:
+- As principais tecnologias utilizadas neste projeto foram:
 
-Angular - Framework front-end
-TypeScript - Linguagem de programação
-HTML5 e CSS3 - Marcação e estilização
+- Angular - Framework front-end
+- TypeScript - Linguagem de programação
+- HTML5 e CSS3 - Marcação e estilização
+
+
+
+![Captura de tela 2024-11-20 105746](https://github.com/user-attachments/assets/9179179d-bd34-4587-9723-f5fef54ff04a)
+
+![Captura de tela 2024-11-20 105849](https://github.com/user-attachments/assets/f6440bf0-8645-4823-8884-0d7d7dc2acb7)
+
+![Captura de tela 2024-11-20 105919](https://github.com/user-attachments/assets/7f474e74-15ad-492e-bdf4-c23ca4d52b3b)
+
+![Captura de tela 2024-11-20 110044](https://github.com/user-attachments/assets/744988e3-9137-4a38-b151-ef7e9f9c76f8)
+
 
 
