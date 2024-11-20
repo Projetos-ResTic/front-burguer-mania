@@ -1,27 +1,69 @@
 # BurguerMania
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+---
 
-## Development server
+## 📖 Descrição do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este é um projeto desenvolvido em Angular que tem como objetivo implementar uma aplicação de interface interativa e responsiva para gerenciamento de pedidos e visualização de cardápios. O foco é oferecer uma experiência intuitiva, eficiente e visualmente consistente, seguindo rigorosamente o layout proposto.
 
-## Code scaffolding
+O projeto foi projetado para ser totalmente responsivo e adotar uma arquitetura componentizada, garantindo a reutilização de componentes em diversas telas e funcionalidades do sistema.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🔧 Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) 
+- [Angular CLI](https://angular.io/cli) 
+- [Git](https://git-scm.com/)
+- Um editor de código, como [Visual Studio Code](https://code.visualstudio.com/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## ▶️ Como Executar o Projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Projetos-ResTic/front-burguer-mania.git
 
-## Further help
+2. Instale as dependências:
+   ```bash
+   npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Inicie a aplicação:
+   ````bash
+   ng serve
+
+---
+
+##  Estrutura de Pastas
+   src/
+├── app/
+│   ├── components/
+|   |   ├── button/
+|   |   ├── card/
+|   |   ├── descricao/
+│   │   ├── header/
+│   │   ├── input/
+|   ├── pages/
+|   |  ├── cardapio/
+|   |  ├── categoria/
+|   |  ├── detalhes/
+|   |  ├── home/
+|   |  ├── pedido/
+├── assets/
+└── index.html
+
+
+---
+
+🚀 Tecnologias Utilizadas
+As principais tecnologias utilizadas neste projeto foram:
+
+Angular - Framework front-end
+TypeScript - Linguagem de programação
+HTML5 e CSS3 - Marcação e estilização
+
+
