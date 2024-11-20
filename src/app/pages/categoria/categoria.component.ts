@@ -16,8 +16,6 @@ export class CategoriaComponent implements OnInit {
   categoria: string | null = null;
   cardapioCompletoButtonText: string = 'Ver cardápio completo';
 
-
-  // Lista completa de itens, cada item tem imagem, título e descrição
   allItems = [
     {
       categoria: 'X-Vegan',

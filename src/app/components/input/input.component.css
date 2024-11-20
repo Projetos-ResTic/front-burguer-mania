@@ -1,56 +1,78 @@
 label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 20px;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+label span {
+  color: var(--red-color);
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid var(--white-border);
+  border-radius: 4px;
+  width: 300px;
+  outline: none;
+}
+
+textarea {
+  width: 650px;
+  height: 120px;
+  border: 1px solid var(--white-border);
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.group-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  margin: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+@media (max-width: 768px) {
+  .group-form {
+    flex-direction: column;
+    margin: 20px;
   }
 
-  label  span{
-    color: var(--red-color);
-  }
-
-
-input, textarea {
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  input,
+  textarea {
     width: 300px;
   }
+}
 
-  textarea {
-    width: 650px;
-    height: 120px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px; 
-    resize: vertical; 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .group-form {
+    flex-direction: column;
+    margin: 20px;
   }
 
-  form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-
-    width: 800px;
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-}
-
-
-.group-form{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-
-    margin: 40px;
-
-}
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
+  input,
+  textarea {
+    width: 300px;
+  }
 }

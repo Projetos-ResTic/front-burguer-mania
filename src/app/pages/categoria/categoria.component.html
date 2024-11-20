@@ -1,19 +1,22 @@
 <app-header></app-header>
 
 <section class="categoria">
-    <h1>{{ categoria }}</h1>
-    
-   
-    <div class="categoria-container">
-      <app-card *ngFor="let item of items"
-        [imagem]="item.imagem"
-        [titulo]="item.titulo"
-        [descricao]="item.descricao"
-        [routerLink]="['/detalhes', item.titulo]"
-        class="clickable-card">
-      </app-card>
-    </div>
-    
-  
-    <app-button [buttonText]="cardapioCompletoButtonText" [isUpper]="true"></app-button>
-  </section>
+  <h1 class="title-p">{{ categoria }}</h1>
+
+  <div class="categoria-container">
+    <app-card
+      *ngFor="let item of items"
+      [imagem]="item.imagem"
+      [titulo]="item.titulo"
+      [descricao]="item.descricao"
+      [routerLink]="['/detalhes', item.titulo]"
+      class="clickable-card"
+    >
+    </app-card>
+  </div>
+
+  <app-button
+    [buttonText]="cardapioCompletoButtonText"
+    [isUpper]="true"
+  ></app-button>
+</section>

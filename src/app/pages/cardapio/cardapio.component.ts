@@ -19,8 +19,6 @@ export class CardapioComponent {
 
   @Input() titleText: string = 'Cardápio';
 
-
-  
   cards = [
     {
       imagem: 'assets/card-burger.png',

@@ -1,22 +1,28 @@
 :root {
-    --red-color: #ED0000;
-    --brown-color: #521D16;
-    --white-color: #f8f8f8;
-    --font-family: 'Roboto', sans-serif;
+  --red-color: #ed0000;
+  --brown-color: #521d16;
+  --white-color: #f8f8f8;
+  --white-border: #ccc;
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-    width: 100%; 
-    font-family: var(--font-family);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: var(--font-family);
 }
 
 
-
-
+.title-p{
+  color: var(--red-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}

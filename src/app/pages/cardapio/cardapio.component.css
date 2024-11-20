@@ -17,9 +17,5 @@
 }
 
 h1 {
-  color: var(--red-color);
-  font-size: 45px;
-  line-height: 54.46px;
-  text-transform: uppercase;
   margin-bottom: 30px;
 }

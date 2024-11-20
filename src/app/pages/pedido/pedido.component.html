@@ -1,13 +1,13 @@
 <app-header></app-header>
 
 <section>
-    <h1>{{ titleText }}</h1>
+  <h1 class="title-p">{{ titleText }}</h1>
 
-    <div class="fazer-pedido">
-        <app-input></app-input>
-        <app-button [isUpper]="true" [buttonText]="finalizarPedidoButtonText"></app-button>
-    </div>
-
-
+  <div class="fazer-pedido">
+    <app-input></app-input>
+    <app-button
+      [isUpper]="true"
+      [buttonText]="finalizarPedidoButtonText"
+    ></app-button>
+  </div>
 </section>
-

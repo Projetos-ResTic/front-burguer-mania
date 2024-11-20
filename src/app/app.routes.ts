@@ -6,27 +6,20 @@ import { PedidoComponent } from './pages/pedido/pedido.component';
 import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { DescricaoComponent } from './components/descricao/descricao.component';
 
-
-
 export const routes: Routes = [
-    { path: '', component: HomeComponent }, // Página inicial
-    { 
-        path: 'cardapio', 
-        component: CardapioComponent, // Página principal do cardápio
-        children: [
-          { path: ':categoria', component: CategoriaComponent }, // Página para itens de uma categoria
-        ]
-      },
+  { path: '', component: HomeComponent }, 
+  {
+    path: 'cardapio',
+    component: CardapioComponent, 
+    children: [
+      { path: ':categoria', component: CategoriaComponent }, 
+    ],
+  },
 
+  { path: 'pedido', component: PedidoComponent },
+  { path: 'categoria/:titulo', component: CategoriaComponent },
 
-      { path: 'pedido', component: PedidoComponent },
-      { path: 'categoria/:titulo', component: CategoriaComponent }, // Rota de categoria com o parâmetro 'titulo'
-      
+  { path: 'detalhes/:titulo', component: DetalhesComponent }, 
 
-
-
-     { path: 'detalhes/:titulo', component: DetalhesComponent }, // Rota para os detalhes
-
-      //{ path: 'detalhes/:categoria', component: DetalhesComponent }
-
+  //{ path: 'detalhes/:categoria', component: DetalhesComponent }
 ];
